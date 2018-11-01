@@ -15,6 +15,10 @@ end
 return running_total
 end
 
-def multiply(num1, num2)
-num1 * num2
+def multiply(*arr_of_num)
+arr_of_num.reduce(1, :*)
+end
+
+def power(num1,num2)
+num1 ** num2
 end
